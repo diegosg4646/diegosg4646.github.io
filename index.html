@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Diego Html</title>
+    <script>
+        function validar() {
+            var email = document.getElementById("emailId").value;
+            var pass = document.getElementById("passId").value;
+            if (email == "Diego" && pass == "Patata") {
+                alert("Bienvenido Diego");
+            } else {
+                alert("Error");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form action="" method="">
+        <input type="email" name="" id="emailId">
+        <input type="password" name="" id="passId">
+        <input type="button" value="Validar" id="buttonId" onclick="validar()">
+    </form>
+</body>
+
+</html>
