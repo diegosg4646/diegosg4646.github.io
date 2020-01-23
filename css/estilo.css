@@ -50,6 +50,14 @@ h1 {
     font-family: 'Righteous', cursive;
 }
 
+
+input {
+    border-width: 0px;
+    height: 3em;
+    border-width: 0.2em;
+    border-style: solid;
+    border-color: rgba(37, 36, 36, 0.705);
+}
 body{
     background-color: orange;
 }
@@ -62,7 +70,7 @@ body{
 
 .ancho100{
     width: 90%;
-    padding:5px;
+    padding-bottom:5px;
     margin-bottom: 15px;
 }
 
@@ -79,10 +87,10 @@ body{
 .botonAzul{
     background-color: turquoise;
     color:whitesmoke;
-    padding-right: 5px;
+    /* padding-right: 5px; */
 
 }
 
 .texto25{
-    font-size:0.5em;
+    font-size:0.75em;
 }
