@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estilo.css">
+
+
+
     <title>Diego Html</title>
     <script>
         function validar() {
@@ -12,23 +16,62 @@
             var pass = document.getElementById("passId").value;
             if (email == "diego@diego.com" && pass == "Patata") {
                 alert("Bienvenido Diego");
-                window.location.href="cv.html"
+                window.location.href = "cv.html"
             } else {
                 alert("Error");
             }
+        }
+
+        function colorear() {
+
+
+            return;
         }
     </script>
 </head>
 
 <body>
-    <form action="" method="">
-        <label>Introduce Email</label>
-        <input type="email" name="" id="emailId"><br>
-        <label>Introduce Contraseña</label>
+    <!--  <div>CABECERA</div>
 
-        <input type="password" name="" id="passId"><br>
-        <input type="button" value="Validar" id="buttonId" onclick="validar()">
-    </form>
+
+
+    <div id="formValidarId">
+        <h1>Validación</h1> 
+        <form action="" method="">
+            <label for="emailId">Introduce Email</label>
+            <input type="email" name="" id="emailId" class="rojo"><br>
+
+            <label for="passId">Introduce Contraseña</label>
+            <input type="password" name="" id="passId" class="rojo"><br>
+
+            <input type="button" value="Validar" id="buttonId" onclick="validar()">
+            <br><br>
+
+            <label for="idColor">Opciones</label>
+
+            <input type="color" name="" id="idColor">
+            <input type="button" value="Colorear" onclick="colorear()">
+        </form>
+    </div> -->
+
+    <div id="cuadroPrincipalId">
+        <p>Login Form</p>
+        <p>Login to access your dashboard</p>
+        <form action="" method="">
+            <label for="emailId">Introduce Email</label><br>
+            <input type="email" name="" id="emailId" class="rojo"><br><br>
+
+            <label for="passId">Introduce Contraseña</label><br>
+            <input type="password" name="" id="passId" class="rojo"><br><br>
+
+            <input class="botonAzul" type="button" value="Validar" id="buttonId" onclick="validar()">
+            <br><br>
+
+
+        </form>
+        <p>Don´t have an account? Sign Up</p>
+    </div>
+
 </body>
 
 </html>
