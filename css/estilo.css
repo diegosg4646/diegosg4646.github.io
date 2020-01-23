@@ -67,10 +67,11 @@ body{
 }
 
 #cuadroPrincipalId{
-    width:40%;
+    width: 40%;
+    margin: auto;
     
     padding: 10px;
-    margin: 25px;
+    
    
     background-color: whitesmoke;
 }
@@ -78,5 +79,10 @@ body{
 .botonAzul{
     background-color: turquoise;
     color:whitesmoke;
+    padding-right: 5px;
 
+}
+
+.texto25{
+    font-size:0.5em;
 }
