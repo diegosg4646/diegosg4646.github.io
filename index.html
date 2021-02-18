@@ -3,74 +3,275 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/estilo.css">
-
-
-
-    <title>Diego Html</title>
-    <script>
-        function validar() {
-            var email = document.getElementById("emailId").value;
-            var pass = document.getElementById("passId").value;
-            if (email == "diego@diego.com" && pass == "Patata") {
-                alert("Bienvenido Diego");
-                window.location.href = "cv.html"
-            } else {
-                alert("Error");
-            }
-        }
-
-        function colorear() {
-
-
-            return;
-        }
-    </script>
+    <title>TechNews</title>
+    <!-- FONT AWSOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <!-- FONT OSWALD GOOGLEFONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-    <!--  <div>CABECERA</div>
 
-
-
-    <div id="formValidarId">
-        <h1>Validación</h1> 
-        <form action="" method="">
-            <label for="emailId">Introduce Email</label>
-            <input type="email" name="" id="emailId" class="rojo"><br>
-
-            <label for="passId">Introduce Contraseña</label>
-            <input type="password" name="" id="passId" class="rojo"><br>
-
-            <input type="button" value="Validar" id="buttonId" onclick="validar()">
-            <br><br>
-
-            <label for="idColor">Opciones</label>
-
-            <input type="color" name="" id="idColor">
-            <input type="button" value="Colorear" onclick="colorear()">
-        </form>
-    </div> -->
-
-    <div id="cuadroPrincipalId">
-        <p>Login Form</p>
-        <p>Login to access your dashboard</p>
-        <form action="" method="">
-            <input class="ancho100" type="email" name="" id="emailId" placeholder="Email" title="Introduce Email">
-
-            <input class="ancho100" type="password" name="" id="passId" placeholder="Contraseña" >
-
-            <input class="botonAzul ancho100" type="button" value="Login" id="buttonId" onclick="validar()">
-
-            <label for="idColor">Opciones</label>
-            <input type="color" name="" id="idColor">
-            <input type="button" value="Colorear" onclick="colorear()">
-        </form>
-        <p class="texto25">Don´t have an account? <span> Sign Up</span></p>
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
     </div>
 
+    <div class="container">
+        <nav class="nav-main">
+            <img src="./img/logo.jpg" alt="TechNews LOGO" class="nav-brand">
+            <ul class="nav-menu">
+                <li><a href="">Web Development</a></li>
+                <li><a href="">BlockChain</a></li>
+                <li><a href="">Artificial Intelligence</a></li>
+                <li><a href="">Machine Learning</a></li>
+                <li><a href="">Quantum computing</a></li>
+                <li><a href="">StartUp</a></li>
+                <li><a href="">More...</a></li>
+
+            </ul>
+            <ul class="nav-menu-right">
+                <li>
+                    <a href="">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+
+        <!-- SHOWCASE -->
+        <header class="showcase">
+            <h2>Big News Today</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit id a, reiciendis asperiores porro fugit.
+                Voluptatibus atque non mollitia reprehenderit sint harum, totam quae delectus aut architecto, enim optio
+                praesentium?</p>
+            <a href="#" class="btn">Read More <i class="fas fa-angle-double-right"></i></a>
+        </header>
+
+        <!-- NEWS CARDS -->
+        <div class="news-cards">
+            <div class="card-new">
+                <img src="img/news1.jpg" alt="News One">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ducimus, earum perspiciatis
+                    aperiam sint numquam reprehenderit maiores exercitationem iure consequuntur?</p>
+                <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div class="card-new">
+                <img src="img/news2.jpg" alt="News Two">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ducimus, earum perspiciatis
+                    aperiam sint numquam reprehenderit maiores exercitationem iure consequuntur?</p>
+                <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div class="card-new">
+                <img src="img/news3.jpg" alt="News Three">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ducimus, earum perspiciatis
+                    aperiam sint numquam reprehenderit maiores exercitationem iure consequuntur?</p>
+                <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div class="card-new">
+                <img src="img/news4.jpg" alt="News Four">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ducimus, earum perspiciatis
+                    aperiam sint numquam reprehenderit maiores exercitationem iure consequuntur?</p>
+                <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+            </div>
+        </div>
+
+        <!-- BANNER ONE -->
+        <section class="cards-banner-one">
+            <div class="content">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab harum impedit deleniti! Provident sunt
+                    dicta sapiente minus quos alias quas.</p>
+                <a href="#" class="btn">
+                    Learn More
+                    <i class="fas fa-angle-double-right"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- NEWS CARDS 2-->
+        <div class="news-cards">
+            <div class="card-new">
+                <img src="img/news1.jpg" alt="News One">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ducimus, earum perspiciatis
+                    aperiam sint numquam reprehenderit maiores exercitationem iure consequuntur?</p>
+                <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div class="card-new">
+                <img src="img/news2.jpg" alt="News Two">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ducimus, earum perspiciatis
+                    aperiam sint numquam reprehenderit maiores exercitationem iure consequuntur?</p>
+                <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div class="card-new">
+                <img src="img/news3.jpg" alt="News Three">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ducimus, earum perspiciatis
+                    aperiam sint numquam reprehenderit maiores exercitationem iure consequuntur?</p>
+                <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div class="card-new">
+                <img src="img/news4.jpg" alt="News Four">
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ducimus, earum perspiciatis
+                    aperiam sint numquam reprehenderit maiores exercitationem iure consequuntur?</p>
+                <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+            </div>
+        </div>
+
+        <!-- BANNER TWO -->
+        <section class="cards-banner-two">
+            <div class="content">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab harum impedit deleniti! Provident sunt
+                    dicta sapiente minus quos alias quas.</p>
+                <a href="#" class="btn">
+                    Learn More
+                    <i class="fas fa-angle-double-right"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="social">
+            <p>Follow TechNews</p>
+            <div class="links">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-linkedin"></i></a>
+            </div>
+        </section>
+    </div>
+
+    <div class="footer-links">
+        <div class="footer-container">
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>Title One</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>Title One</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>Title One</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>Title One</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+                <li>
+                    <a href="#">Blockchain</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p><i class="far fa-copyright"></i> Tech News Copyright </p>
+    </div>
+
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="./main.js"></script>
 </body>
 
 </html>
